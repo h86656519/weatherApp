@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".WeatherDetailFragment">
+
+        <TextView
+            android:id="@+id/included_imageview1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/design_default_color_error"
+            android:gravity="center"
+            android:text="A"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_weather_info"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/tv_weather_info"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/material_dynamic_tertiary80"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@id/included_imageview2"
+            app:layout_constraintEnd_toStartOf="@+id/included_imageview2"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/included_imageview1"
+            app:layout_constraintTop_toBottomOf="@id/included_imageview1"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/included_imageview2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/design_default_color_error"
+            android:gravity="center"
+            android:src="@mipmap/ic_launcher"
+            android:text="B"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/tv_weather_info"
+            app:layout_constraintTop_toBottomOf="@+id/tv_weather_info"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
